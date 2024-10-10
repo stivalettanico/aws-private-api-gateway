@@ -33,7 +33,7 @@ module "compute" {
 }
 
 //api gateway module
-module "private_api" {
+/*module "private_api" {
   source = "./modules/private_api"
 
   vpce_id      = module.network.vpc_endpoint_id
@@ -50,4 +50,4 @@ output "vpc_endpoint_id" {
 # Output the VPC Endpoint ID from the module
 output "vpc_endpoint_sg_id" {
   value = module.network.vpc_endpoint_sg_id
-}
+}*/

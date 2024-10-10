@@ -25,3 +25,6 @@ terraform.rc
 
 # Ignore plan output
 *.tfplan
+
+# Ignore the lock
+.terraform.lock.hcl
