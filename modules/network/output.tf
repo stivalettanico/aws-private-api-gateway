@@ -1,8 +1,8 @@
 # Output the VPC Endpoint ID
-output "vpc_endpoint_id" {
+/*output "vpc_endpoint_id" {
   description = "The ID of the VPC endpoint"
   value       = aws_vpc_endpoint.api_gateway.id
-}
+}*/
 
 output "vpc_endpoint_sg_id" {
   description = "The ID of the VPC endpoint security group"
