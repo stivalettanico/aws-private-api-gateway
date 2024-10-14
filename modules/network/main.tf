@@ -245,7 +245,7 @@ resource "aws_route_table" "private" {
 ################################################################################
 # Define the VPC endpoint for API Gateway (execute-api)
 ################################################################################
-resource "aws_vpc_endpoint" "api_gateway" {
+/*resource "aws_vpc_endpoint" "api_gateway" {
 
   vpc_id             = aws_vpc.this.id
   service_name       = "com.amazonaws.${data.aws_region.current.name}.execute-api"
@@ -258,7 +258,7 @@ resource "aws_vpc_endpoint" "api_gateway" {
   tags = {
     Name = "vpce-execute-api-${var.project_name}-${var.environment}-${var.region_substring}"
   }
-}
+}*/
 
 ################################################################################
 # Create a security group for the VPC endpoint
